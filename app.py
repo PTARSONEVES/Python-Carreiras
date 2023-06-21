@@ -1,11 +1,43 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
+
+VAGAS = [{
+    'id': 1,
+    'titulo': 'Analista de Dados',
+    'localidade': 'PE, Brasil',
+    'salario': 'R$ 5.000'
+}, {
+    'id': 1,
+    'titulo': 'Desenvolvedor Front-end',
+    'localidade': 'PE, Brasil',
+    'salario': 'R$ 5.000'
+}, {
+    'id': 1,
+    'titulo': 'Desenvolvedor Back-end',
+    'localidade': 'PE, Brasil',
+    'salario': 'R$ 5.000'
+}, {
+    'id': 1,
+    'titulo': 'Desenvolvedor Web',
+    'localidade': 'PE, Brasil',
+    'salario': 'R$ 5.000'
+}, {
+    'id': 1,
+    'titulo': 'Estatistico',
+    'localidade': 'PE, Brasil',
+    'salario': 'R$ 5.000'
+}]
 
 
 @app.route("/")
 def page_home():
-    return render_template('home.html')
+    return render_template('home.html', vagas=VAGAS)
+
+
+@app.route("/vagas")
+def lista_vagas():
+    return jsonify(VAGAS)
 
 
 if __name__ == "__main__":
