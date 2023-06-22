@@ -4,26 +4,26 @@ app = Flask(__name__)
 
 VAGAS = [{
     'id': 1,
-    'titulo': 'Analista de Dados',
+    'titulo': 'Analista de Dados Senior',
     'localidade': 'PE, Brasil',
     'salario': 'R$ 5.000'
 }, {
-    'id': 1,
+    'id': 2,
     'titulo': 'Desenvolvedor Front-end',
     'localidade': 'PE, Brasil',
     'salario': 'R$ 5.000'
 }, {
-    'id': 1,
+    'id': 3,
     'titulo': 'Desenvolvedor Back-end',
     'localidade': 'PE, Brasil',
     'salario': 'R$ 5.000'
 }, {
-    'id': 1,
+    'id': 4,
     'titulo': 'Desenvolvedor Web',
     'localidade': 'PE, Brasil',
     'salario': 'R$ 5.000'
 }, {
-    'id': 1,
+    'id': 5,
     'titulo': 'Estatistico',
     'localidade': 'PE, Brasil',
     'salario': 'R$ 5.000'
